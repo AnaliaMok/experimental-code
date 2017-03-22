@@ -1,0 +1,43 @@
+/* Zeroing out defaults */
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav{
+    background-color: #2B2B2B;
+    height: 10vh;
+    position: relative;
+}
+
+nav a{
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    color: #FCFCFC;
+    font-family: Roboto, sans-serif;
+}
+
+/* Menu Icon Styling */
+div.menu_icon{
+    display: block;
+    margin: 0.5%;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    text-align: center;
+}
+
+div.menu_icon div{
+    width: 2em;
+    height: 0.25em;
+    margin: 5px 0;
+    background-color: #18B1F9;
+}
+
+div.menu_icon:hover div{
+    display: inline-block;
+    width: 0.25em;
+    height: 2em;
+}
