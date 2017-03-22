@@ -7,25 +7,30 @@ html, body{
 
 nav{
     background-color: #2B2B2B;
-    height: 10vh;
-    position: relative;
 }
 
 nav a{
     vertical-align: middle;
     text-decoration: none;
     display: inline-block;
+    padding: 1.1em;
+    margin: 0;
     color: #FCFCFC;
     font-family: Roboto, sans-serif;
 }
 
+nav a:hover{
+    background-color: #4B4B4B;
+}
+
 /* Menu Icon Styling */
 div.menu_icon{
-    display: block;
-    margin: 0.5%;
-    position: absolute;
-    top: 1%;
-    right: 1%;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0.5% 1% 0.5% 0;
+    vertical-align: middle;
+    float: right;
     text-align: center;
 }
 
@@ -34,10 +39,19 @@ div.menu_icon div{
     height: 0.25em;
     margin: 5px 0;
     background-color: #18B1F9;
+    transition: width 0.5s;
+    border-radius: 0.1em;
 }
 
-div.menu_icon:hover div{
-    display: inline-block;
-    width: 0.25em;
-    height: 2em;
+div.menu_icon div#two{
+    width: 1.25em;
+}
+
+div.menu_icon div#three{
+    width: 1.75em;
+}
+
+div.menu_icon:hover div#two, 
+div.menu_icon:hover div#three{
+    width: 2em;
 }
