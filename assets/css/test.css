@@ -7,6 +7,7 @@ html, body{
 
 nav.main_nav{
     background-color: #2B2B2B;
+    z-index: 10;
 }
 
 nav.main_nav a{
@@ -17,6 +18,7 @@ nav.main_nav a{
     margin: 0;
     color: #FCFCFC;
     font-family: Roboto, sans-serif;
+    z-index: 10;
 }
 
 nav.main_nav a:hover{
@@ -31,8 +33,10 @@ div.menu_icon{
     margin: 1em;
     vertical-align: middle;
     text-align: center;
+    z-index: 10;
 }
 
+/* Actual Menu Bars */
 div.menu_icon div{
     width: 2em;
     height: 0.25em;
@@ -66,8 +70,21 @@ div.menu_icon:hover div#three{
     width: 2em;
 }
 
-@media screen and (min-width: 768px){
+/* Main Content */
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px){
+    /* Desktop and Tablet Styling */
+    
+    /* Switch how links are visible */
     nav.main_nav a{
         display: inline-block;
+    }
+    
+    nav.main_nav .menu_icon{
+        display: none;
     }
 }
