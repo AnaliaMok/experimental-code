@@ -1,0 +1,50 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+}
+
+#content_wrapper{
+    width: 80%;
+    margin: 0 auto;
+    font-family: sans-serif;
+/*    background-color: #FCFCFC;*/
+}
+
+header{
+    margin: 0 0 2% 0;
+    padding: 1% 0;
+    text-align: center;
+    align-self: stretch;
+    background-color: #0e4c5e;
+}
+
+header h1{
+    margin: 0.5%;
+    padding: 0;
+    color: #FDFDFD;
+    font-family: Arial, sans-serif;
+}
+
+header h1:first-child{
+    margin-top: 1.5%;
+}
+
+table{
+/*    border-collapse: collapse;*/
+    display: inline-block;
+    table-layout: auto;
+}
+
+table tr td, table tr th{
+    padding: 1%;
+}
+
+blockquote{
+    display: inline-block;
+}
+
+.center_content{
+    text-align: center;
+}
